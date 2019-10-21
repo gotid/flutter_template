@@ -1,4 +1,4 @@
-part of 'view_model_widget.dart';
+part of 'view_model_helper.dart';
 
 /// 视图状态 —— 加载中组件
 class ViewStateBusyWidget extends StatelessWidget {
