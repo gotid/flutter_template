@@ -1,13 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_template/models/article.dart';
 import 'package:flutter_template/view_models/article_model.dart';
 import 'package:flutter_template/views/helpers/skeleton_helper.dart';
 import 'package:flutter_template/views/helpers/view_model_widget.dart';
-import 'package:flutter_template/views/helpers/view_state_widget.dart';
 import 'package:flutter_template/views/widgets/article_list_item.dart';
 import 'package:flutter_template/views/widgets/article_skeleton_item.dart';
-import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class ArticleListPage extends StatefulWidget {
   // 分类编号
