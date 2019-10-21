@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-// import 'home_page.dart';
-// import 'search_page.dart';
 import 'category_page.dart';
 import 'mine_page.dart';
 
@@ -12,56 +10,32 @@ class DashPage extends StatefulWidget {
 
 class _DashPageState extends State<DashPage> {
   int _pageIndex = 0;
-  final PageController _pageController = PageController();
 
-  @override
-  void initState() {
-    super.initState();
-  }
+  get navBar => BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        currentIndex: _pageIndex,
+        fixedColor: Colors.purple,
+        onTap: onTap,
+        items: items,
+      );
+
+  final PageController _pageController = PageController();
+  final List<BottomNavigationBarItem> items = [
+    BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('首页')),
+    BottomNavigationBarItem(icon: Icon(Icons.search), title: Text('搜索')),
+    BottomNavigationBarItem(icon: Icon(Icons.category), title: Text('目录')),
+    BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('我的')),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        currentIndex: _pageIndex,
-        fixedColor: Colors.purple,
-        onTap: (int index) {
-          setState(() {
-            _pageIndex = index;
-            _pageController.jumpToPage(index);
-          });
-        },
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            title: Text('Search'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.category),
-            title: Text('Category'),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text('Mine'),
-          ),
-        ],
-      ),
+      bottomNavigationBar: navBar,
       body: PageView(
         controller: _pageController,
         physics: NeverScrollableScrollPhysics(),
-        onPageChanged: (int index) {
-          setState(() {
-            _pageIndex = index;
-          });
-        },
+        onPageChanged: onPageChanged,
         children: <Widget>[
-          // HomePage(),
-          // SearchPage(),
           CategoryPage(),
           MinePage(),
           CategoryPage(),
@@ -70,4 +44,13 @@ class _DashPageState extends State<DashPage> {
       ),
     );
   }
+
+  onTap(int index) => setState(() {
+        _pageIndex = index;
+        _pageController.jumpToPage(index);
+      });
+
+  onPageChanged(int index) => setState(() {
+        _pageIndex = index;
+      });
 }

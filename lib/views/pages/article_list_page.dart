@@ -2,9 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_template/models/article.dart';
+import 'package:flutter_template/views/helpers/index.dart';
 import 'package:flutter_template/view_models/article_model.dart';
-import 'package:flutter_template/views/helpers/skeleton_helper.dart';
-import 'package:flutter_template/views/helpers/view_model_helper.dart';
 import 'package:flutter_template/views/widgets/article_list_item.dart';
 import 'package:flutter_template/views/widgets/article_skeleton_item.dart';
 

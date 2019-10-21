@@ -1,4 +1,9 @@
-part of 'view_model_helper.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_template/helpers/constants.dart';
+import 'package:flutter_template/core/view_models/view_state.dart';
+import 'package:flutter_template/views/helpers/image_helper.dart';
+
+import 'icon_helper.dart';
 
 /// 视图状态 —— 加载中组件
 class ViewStateBusyWidget extends StatelessWidget {

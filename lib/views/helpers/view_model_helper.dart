@@ -1,12 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_template/helpers/constants.dart';
-import 'package:flutter_template/core/view_models/view_state.dart';
-
-import 'icon_helper.dart';
-import 'image_helper.dart';
-
-part 'view_state_widget.dart';
 
 /// 视图模型部件
 class ViewModelWidget<T extends ChangeNotifier> extends StatefulWidget {
