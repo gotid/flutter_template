@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/models/tree.dart';
 import 'package:flutter_template/view_models/category_model.dart';
-import 'package:flutter_template/views/helper/view_model_widget.dart';
-import 'package:flutter_template/views/helper/view_state_widget.dart';
+import 'package:flutter_template/views/helpers/view_model_widget.dart';
+import 'package:flutter_template/views/helpers/view_state_widget.dart';
 
 import 'sub_category_page.dart';
 
