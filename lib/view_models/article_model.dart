@@ -1,7 +1,7 @@
 import 'package:flutter_template/core/services/wan_android_service.dart';
-import 'package:flutter_template/core/view_models/refresh_list_view_model.dart';
+import 'package:flutter_template/core/view_models/page_view_model.dart';
 
-class ArticleListModel extends RefreshListViewModel {
+class ArticleListModel extends PageViewModel {
   final int cid;
 
   ArticleListModel(this.cid);

@@ -5,7 +5,7 @@ import 'list_view_model.dart';
 /// 多页列表视图模型
 ///
 /// 用于维护多页列表数据及状态，并提供下拉刷新、上拉加载方法
-abstract class RefreshListViewModel<T> extends ListViewModel<T> {
+abstract class PageViewModel<T> extends ListViewModel<T> {
   /// 首页页码
   static const int firstPage = 0;
 
