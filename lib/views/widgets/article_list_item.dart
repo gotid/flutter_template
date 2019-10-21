@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_template/models/article.dart';
-import 'package:flutter_template/views/helper/image_helper.dart'
+import 'package:flutter_template/views/helpers/image_helper.dart'
     show ImageWidget, ImageType;
 
 class ArticleListItem extends StatelessWidget {

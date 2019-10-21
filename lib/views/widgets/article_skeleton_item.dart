@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_template/views/helper/skeleton_helper.dart'
-    show SkeletonDecoration, SkeletonItem;
+import 'package:flutter_template/views/helpers/skeleton_helper.dart'
+    show SkeletonDecoration;
 
 class ArticleSkeletonItem extends StatelessWidget {
   @override
