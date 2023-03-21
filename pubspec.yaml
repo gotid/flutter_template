@@ -9,31 +9,31 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ">=0.1.2 <2.0.0"
 
   # 常用工具库
-  flustars: ^0.2.6+1
+  flustars: ">=0.2.6+1 <3.0.0"
 
   # 屏幕适配
-  flutter_screenutil: ^0.6.0
+  flutter_screenutil: ">=0.6.0 <6.0.0"
 
   # APP相关
   ## 设备信息
-  device_info: ^0.4.0+3
+  device_info: ">=0.4.0+3 <3.0.0"
 
   ## 包信息
-  package_info: ^0.4.0+6
+  package_info: ">=0.4.0+6 <3.0.0"
 
   ## 打开其他 APP
-  url_launcher: ^5.1.4
+  url_launcher: ">=5.1.4 <7.0.0"
 
   # 网络请求
-  dio: ^3.0.3
+  dio: ">=3.0.3 <6.0.0"
   dio_cookie_manager: any
   cookie_jar: any
 
   ## 数据状态管理
-  provider: ^3.1.0
+  provider: ">=3.1.0 <7.0.0"
   mobx: any
   flutter_mobx: any
   # mobx_codegen:
@@ -43,14 +43,14 @@ dependencies:
   shimmer: any
 
   ## 注解相关
-  json_annotation: ^3.0.0
-  functional_widget_annotation: ^0.5.1
+  json_annotation: ">=3.0.0 <5.0.0"
+  functional_widget_annotation: ">=0.5.1 <0.11.0"
 
   # 提示层
-  oktoast: ^2.2.0
+  oktoast: ">=2.2.0 <4.0.0"
 
   ## 下拉刷新
-  pull_to_refresh: ^1.5.6
+  pull_to_refresh: ">=1.5.6 <3.0.0"
 
   ## 幻灯片
   flutter_swiper: ^1.1.6
@@ -59,7 +59,7 @@ dependencies:
   flare_flutter: any
 
   ## 图表
-  syncfusion_flutter_charts: 17.3.14
+  syncfusion_flutter_charts: ">=17.3.14 <21.0.0"
   flutter_sparkline: any
 
 builders:
